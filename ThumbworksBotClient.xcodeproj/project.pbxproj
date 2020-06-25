@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F41A8B624A44D7C00955CD8 /* ThumbworksBotClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8B524A44D7C00955CD8 /* ThumbworksBotClientApp.swift */; };
+		5F41A8B824A44D7C00955CD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8B724A44D7C00955CD8 /* ContentView.swift */; };
+		5F41A8BA24A44D7E00955CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A8B924A44D7E00955CD8 /* Assets.xcassets */; };
+		5F41A8BD24A44D7E00955CD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A8BC24A44D7E00955CD8 /* Preview Assets.xcassets */; };
+		5F41A8C824A44D7E00955CD8 /* ThumbworksBotClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8C724A44D7E00955CD8 /* ThumbworksBotClientTests.swift */; };
+		5F41A8D324A44D7E00955CD8 /* ThumbworksBotClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8D224A44D7E00955CD8 /* ThumbworksBotClientUITests.swift */; };
+		5F41A8E124A44FCD00955CD8 /* InvoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E024A44FCD00955CD8 /* InvoicesView.swift */; };
+		5F41A8E324A44FFA00955CD8 /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E224A44FFA00955CD8 /* InvoiceCell.swift */; };
+		5F41A8E524A45B8500955CD8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E424A45B8500955CD8 /* APIClient.swift */; };
+		5F41A8E724A45BAB00955CD8 /* InvoiceAPIDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E624A45BAB00955CD8 /* InvoiceAPIDB.swift */; };
+		5F41A8E924A45E0200955CD8 /* InvoicesViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E824A45E0200955CD8 /* InvoicesViewmodel.swift */; };
+		5F41A8F124A46B5F00955CD8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41A8F024A46B5F00955CD8 /* WidgetKit.framework */; };
+		5F41A8F324A46B5F00955CD8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F41A8F224A46B5F00955CD8 /* SwiftUI.framework */; };
+		5F41A8F624A46B5F00955CD8 /* OutstandingBalanceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8F524A46B5F00955CD8 /* OutstandingBalanceWidget.swift */; };
+		5F41A8F924A46B6500955CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F41A8F824A46B6500955CD8 /* Assets.xcassets */; };
+		5F41A8FB24A46B6500955CD8 /* OutstandingBalanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8F724A46B5F00955CD8 /* OutstandingBalanceWidget.intentdefinition */; };
+		5F41A8FC24A46B6500955CD8 /* OutstandingBalanceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8F724A46B5F00955CD8 /* OutstandingBalanceWidget.intentdefinition */; };
+		5F41A8FF24A46B6500955CD8 /* OutstandingBalanceWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5F41A8EE24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F41A90524A46BF100955CD8 /* InvoiceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90424A46BF000955CD8 /* InvoiceContent.swift */; };
+		5F41A90624A46D0B00955CD8 /* InvoiceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90424A46BF000955CD8 /* InvoiceContent.swift */; };
+		5F41A90824A46D4600955CD8 /* InvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90724A46D4600955CD8 /* InvoiceModel.swift */; };
+		5F41A90924A46D9400955CD8 /* InvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90724A46D4600955CD8 /* InvoiceModel.swift */; };
+		5F41A90A24A46E0600955CD8 /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E224A44FFA00955CD8 /* InvoiceCell.swift */; };
+		5F41A90D24A47D2500955CD8 /* LoadInvoicesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90B24A47A7C00955CD8 /* LoadInvoicesData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F41A8C424A44D7E00955CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F41A8AA24A44D7C00955CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F41A8B124A44D7C00955CD8;
+			remoteInfo = ThumbworksBotClient;
+		};
+		5F41A8CF24A44D7E00955CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F41A8AA24A44D7C00955CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F41A8B124A44D7C00955CD8;
+			remoteInfo = ThumbworksBotClient;
+		};
+		5F41A8FD24A46B6500955CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F41A8AA24A44D7C00955CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F41A8ED24A46B5F00955CD8;
+			remoteInfo = OutstandingBalanceWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F41A90324A46B6500955CD8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5F41A8FF24A46B6500955CD8 /* OutstandingBalanceWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F41A8B224A44D7C00955CD8 /* ThumbworksBotClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThumbworksBotClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F41A8B524A44D7C00955CD8 /* ThumbworksBotClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbworksBotClientApp.swift; sourceTree = "<group>"; };
+		5F41A8B724A44D7C00955CD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5F41A8B924A44D7E00955CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F41A8BC24A44D7E00955CD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F41A8BE24A44D7E00955CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F41A8C324A44D7E00955CD8 /* ThumbworksBotClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThumbworksBotClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F41A8C724A44D7E00955CD8 /* ThumbworksBotClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbworksBotClientTests.swift; sourceTree = "<group>"; };
+		5F41A8C924A44D7E00955CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F41A8CE24A44D7E00955CD8 /* ThumbworksBotClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThumbworksBotClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F41A8D224A44D7E00955CD8 /* ThumbworksBotClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbworksBotClientUITests.swift; sourceTree = "<group>"; };
+		5F41A8D424A44D7E00955CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F41A8E024A44FCD00955CD8 /* InvoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesView.swift; sourceTree = "<group>"; };
+		5F41A8E224A44FFA00955CD8 /* InvoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCell.swift; sourceTree = "<group>"; };
+		5F41A8E424A45B8500955CD8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5F41A8E624A45BAB00955CD8 /* InvoiceAPIDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceAPIDB.swift; sourceTree = "<group>"; };
+		5F41A8E824A45E0200955CD8 /* InvoicesViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewmodel.swift; sourceTree = "<group>"; };
+		5F41A8EE24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OutstandingBalanceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F41A8F024A46B5F00955CD8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5F41A8F224A46B5F00955CD8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5F41A8F524A46B5F00955CD8 /* OutstandingBalanceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutstandingBalanceWidget.swift; sourceTree = "<group>"; };
+		5F41A8F724A46B5F00955CD8 /* OutstandingBalanceWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = OutstandingBalanceWidget.intentdefinition; sourceTree = "<group>"; };
+		5F41A8F824A46B6500955CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F41A8FA24A46B6500955CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F41A90424A46BF000955CD8 /* InvoiceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceContent.swift; sourceTree = "<group>"; };
+		5F41A90724A46D4600955CD8 /* InvoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceModel.swift; sourceTree = "<group>"; };
+		5F41A90B24A47A7C00955CD8 /* LoadInvoicesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInvoicesData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F41A8AF24A44D7C00955CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8C024A44D7E00955CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8CB24A44D7E00955CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8EB24A46B5F00955CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F41A8F324A46B5F00955CD8 /* SwiftUI.framework in Frameworks */,
+				5F41A8F124A46B5F00955CD8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F41A8A924A44D7C00955CD8 = {
+			isa = PBXGroup;
+			children = (
+				5F41A8B424A44D7C00955CD8 /* ThumbworksBotClient */,
+				5F41A8C624A44D7E00955CD8 /* ThumbworksBotClientTests */,
+				5F41A8D124A44D7E00955CD8 /* ThumbworksBotClientUITests */,
+				5F41A8F424A46B5F00955CD8 /* OutstandingBalanceWidget */,
+				5F41A8EF24A46B5F00955CD8 /* Frameworks */,
+				5F41A8B324A44D7C00955CD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F41A8B324A44D7C00955CD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F41A8B224A44D7C00955CD8 /* ThumbworksBotClient.app */,
+				5F41A8C324A44D7E00955CD8 /* ThumbworksBotClientTests.xctest */,
+				5F41A8CE24A44D7E00955CD8 /* ThumbworksBotClientUITests.xctest */,
+				5F41A8EE24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F41A8B424A44D7C00955CD8 /* ThumbworksBotClient */ = {
+			isa = PBXGroup;
+			children = (
+				5F41A8B524A44D7C00955CD8 /* ThumbworksBotClientApp.swift */,
+				5F41A8B724A44D7C00955CD8 /* ContentView.swift */,
+				5F41A8B924A44D7E00955CD8 /* Assets.xcassets */,
+				5F41A8BE24A44D7E00955CD8 /* Info.plist */,
+				5F41A8BB24A44D7E00955CD8 /* Preview Content */,
+				5F41A8E024A44FCD00955CD8 /* InvoicesView.swift */,
+				5F41A8E224A44FFA00955CD8 /* InvoiceCell.swift */,
+				5F41A90724A46D4600955CD8 /* InvoiceModel.swift */,
+				5F41A90424A46BF000955CD8 /* InvoiceContent.swift */,
+				5F41A8E424A45B8500955CD8 /* APIClient.swift */,
+				5F41A8E624A45BAB00955CD8 /* InvoiceAPIDB.swift */,
+				5F41A8E824A45E0200955CD8 /* InvoicesViewmodel.swift */,
+			);
+			path = ThumbworksBotClient;
+			sourceTree = "<group>";
+		};
+		5F41A8BB24A44D7E00955CD8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5F41A8BC24A44D7E00955CD8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F41A8C624A44D7E00955CD8 /* ThumbworksBotClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F41A8C724A44D7E00955CD8 /* ThumbworksBotClientTests.swift */,
+				5F41A8C924A44D7E00955CD8 /* Info.plist */,
+			);
+			path = ThumbworksBotClientTests;
+			sourceTree = "<group>";
+		};
+		5F41A8D124A44D7E00955CD8 /* ThumbworksBotClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F41A8D224A44D7E00955CD8 /* ThumbworksBotClientUITests.swift */,
+				5F41A8D424A44D7E00955CD8 /* Info.plist */,
+			);
+			path = ThumbworksBotClientUITests;
+			sourceTree = "<group>";
+		};
+		5F41A8EF24A46B5F00955CD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F41A8F024A46B5F00955CD8 /* WidgetKit.framework */,
+				5F41A8F224A46B5F00955CD8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F41A8F424A46B5F00955CD8 /* OutstandingBalanceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5F41A8F524A46B5F00955CD8 /* OutstandingBalanceWidget.swift */,
+				5F41A90B24A47A7C00955CD8 /* LoadInvoicesData.swift */,
+				5F41A8F724A46B5F00955CD8 /* OutstandingBalanceWidget.intentdefinition */,
+				5F41A8F824A46B6500955CD8 /* Assets.xcassets */,
+				5F41A8FA24A46B6500955CD8 /* Info.plist */,
+			);
+			path = OutstandingBalanceWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F41A8B124A44D7C00955CD8 /* ThumbworksBotClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F41A8D724A44D7E00955CD8 /* Build configuration list for PBXNativeTarget "ThumbworksBotClient" */;
+			buildPhases = (
+				5F41A8AE24A44D7C00955CD8 /* Sources */,
+				5F41A8AF24A44D7C00955CD8 /* Frameworks */,
+				5F41A8B024A44D7C00955CD8 /* Resources */,
+				5F41A90324A46B6500955CD8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F41A8FE24A46B6500955CD8 /* PBXTargetDependency */,
+			);
+			name = ThumbworksBotClient;
+			productName = ThumbworksBotClient;
+			productReference = 5F41A8B224A44D7C00955CD8 /* ThumbworksBotClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F41A8C224A44D7E00955CD8 /* ThumbworksBotClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F41A8DA24A44D7E00955CD8 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientTests" */;
+			buildPhases = (
+				5F41A8BF24A44D7E00955CD8 /* Sources */,
+				5F41A8C024A44D7E00955CD8 /* Frameworks */,
+				5F41A8C124A44D7E00955CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F41A8C524A44D7E00955CD8 /* PBXTargetDependency */,
+			);
+			name = ThumbworksBotClientTests;
+			productName = ThumbworksBotClientTests;
+			productReference = 5F41A8C324A44D7E00955CD8 /* ThumbworksBotClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F41A8CD24A44D7E00955CD8 /* ThumbworksBotClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F41A8DD24A44D7E00955CD8 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientUITests" */;
+			buildPhases = (
+				5F41A8CA24A44D7E00955CD8 /* Sources */,
+				5F41A8CB24A44D7E00955CD8 /* Frameworks */,
+				5F41A8CC24A44D7E00955CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F41A8D024A44D7E00955CD8 /* PBXTargetDependency */,
+			);
+			name = ThumbworksBotClientUITests;
+			productName = ThumbworksBotClientUITests;
+			productReference = 5F41A8CE24A44D7E00955CD8 /* ThumbworksBotClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5F41A8ED24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F41A90024A46B6500955CD8 /* Build configuration list for PBXNativeTarget "OutstandingBalanceWidgetExtension" */;
+			buildPhases = (
+				5F41A8EA24A46B5F00955CD8 /* Sources */,
+				5F41A8EB24A46B5F00955CD8 /* Frameworks */,
+				5F41A8EC24A46B5F00955CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutstandingBalanceWidgetExtension;
+			productName = OutstandingBalanceWidgetExtension;
+			productReference = 5F41A8EE24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F41A8AA24A44D7C00955CD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					5F41A8B124A44D7C00955CD8 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5F41A8C224A44D7E00955CD8 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5F41A8B124A44D7C00955CD8;
+					};
+					5F41A8CD24A44D7E00955CD8 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5F41A8B124A44D7C00955CD8;
+					};
+					5F41A8ED24A46B5F00955CD8 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 5F41A8AD24A44D7C00955CD8 /* Build configuration list for PBXProject "ThumbworksBotClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F41A8A924A44D7C00955CD8;
+			productRefGroup = 5F41A8B324A44D7C00955CD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F41A8B124A44D7C00955CD8 /* ThumbworksBotClient */,
+				5F41A8C224A44D7E00955CD8 /* ThumbworksBotClientTests */,
+				5F41A8CD24A44D7E00955CD8 /* ThumbworksBotClientUITests */,
+				5F41A8ED24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F41A8B024A44D7C00955CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F41A8BD24A44D7E00955CD8 /* Preview Assets.xcassets in Resources */,
+				5F41A8BA24A44D7E00955CD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8C124A44D7E00955CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8CC24A44D7E00955CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8EC24A46B5F00955CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F41A8F924A46B6500955CD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F41A8AE24A44D7C00955CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F41A8B824A44D7C00955CD8 /* ContentView.swift in Sources */,
+				5F41A90824A46D4600955CD8 /* InvoiceModel.swift in Sources */,
+				5F41A8E324A44FFA00955CD8 /* InvoiceCell.swift in Sources */,
+				5F41A8E924A45E0200955CD8 /* InvoicesViewmodel.swift in Sources */,
+				5F41A8B624A44D7C00955CD8 /* ThumbworksBotClientApp.swift in Sources */,
+				5F41A8FC24A46B6500955CD8 /* OutstandingBalanceWidget.intentdefinition in Sources */,
+				5F41A90524A46BF100955CD8 /* InvoiceContent.swift in Sources */,
+				5F41A8E524A45B8500955CD8 /* APIClient.swift in Sources */,
+				5F41A8E724A45BAB00955CD8 /* InvoiceAPIDB.swift in Sources */,
+				5F41A8E124A44FCD00955CD8 /* InvoicesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8BF24A44D7E00955CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F41A8C824A44D7E00955CD8 /* ThumbworksBotClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8CA24A44D7E00955CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F41A8D324A44D7E00955CD8 /* ThumbworksBotClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F41A8EA24A46B5F00955CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F41A8FB24A46B6500955CD8 /* OutstandingBalanceWidget.intentdefinition in Sources */,
+				5F41A90A24A46E0600955CD8 /* InvoiceCell.swift in Sources */,
+				5F41A8F624A46B5F00955CD8 /* OutstandingBalanceWidget.swift in Sources */,
+				5F41A90D24A47D2500955CD8 /* LoadInvoicesData.swift in Sources */,
+				5F41A90624A46D0B00955CD8 /* InvoiceContent.swift in Sources */,
+				5F41A90924A46D9400955CD8 /* InvoiceModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F41A8C524A44D7E00955CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F41A8B124A44D7C00955CD8 /* ThumbworksBotClient */;
+			targetProxy = 5F41A8C424A44D7E00955CD8 /* PBXContainerItemProxy */;
+		};
+		5F41A8D024A44D7E00955CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F41A8B124A44D7C00955CD8 /* ThumbworksBotClient */;
+			targetProxy = 5F41A8CF24A44D7E00955CD8 /* PBXContainerItemProxy */;
+		};
+		5F41A8FE24A46B6500955CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F41A8ED24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension */;
+			targetProxy = 5F41A8FD24A46B6500955CD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F41A8D524A44D7E00955CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F41A8D624A44D7E00955CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F41A8D824A44D7E00955CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ThumbworksBotClient/Preview Content\"";
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ThumbworksBotClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F41A8D924A44D7E00955CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ThumbworksBotClient/Preview Content\"";
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ThumbworksBotClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F41A8DB24A44D7E00955CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				INFOPLIST_FILE = ThumbworksBotClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThumbworksBotClient.app/ThumbworksBotClient";
+			};
+			name = Debug;
+		};
+		5F41A8DC24A44D7E00955CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				INFOPLIST_FILE = ThumbworksBotClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThumbworksBotClient.app/ThumbworksBotClient";
+			};
+			name = Release;
+		};
+		5F41A8DE24A44D7E00955CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				INFOPLIST_FILE = ThumbworksBotClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThumbworksBotClient;
+			};
+			name = Debug;
+		};
+		5F41A8DF24A44D7E00955CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				INFOPLIST_FILE = ThumbworksBotClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThumbworksBotClient;
+			};
+			name = Release;
+		};
+		5F41A90124A46B6500955CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				INFOPLIST_FILE = OutstandingBalanceWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClient.OutstandingBalanceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F41A90224A46B6500955CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				INFOPLIST_FILE = OutstandingBalanceWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClient.OutstandingBalanceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F41A8AD24A44D7C00955CD8 /* Build configuration list for PBXProject "ThumbworksBotClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F41A8D524A44D7E00955CD8 /* Debug */,
+				5F41A8D624A44D7E00955CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F41A8D724A44D7E00955CD8 /* Build configuration list for PBXNativeTarget "ThumbworksBotClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F41A8D824A44D7E00955CD8 /* Debug */,
+				5F41A8D924A44D7E00955CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F41A8DA24A44D7E00955CD8 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F41A8DB24A44D7E00955CD8 /* Debug */,
+				5F41A8DC24A44D7E00955CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F41A8DD24A44D7E00955CD8 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F41A8DE24A44D7E00955CD8 /* Debug */,
+				5F41A8DF24A44D7E00955CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F41A90024A46B6500955CD8 /* Build configuration list for PBXNativeTarget "OutstandingBalanceWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F41A90124A46B6500955CD8 /* Debug */,
+				5F41A90224A46B6500955CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F41A8AA24A44D7C00955CD8 /* Project object */;
+}
