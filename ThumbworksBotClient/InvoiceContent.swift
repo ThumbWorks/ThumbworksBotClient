@@ -14,7 +14,8 @@ struct InvoiceContent: View {
         HStack() {
             VStack(alignment: .center) {
                 Image(systemName: invoice.client.imageName)
-                Text("\(Date(), formatter: InvoiceCell.taskDateFormat)").font(.caption2)
+                Text("\(Date(), formatter: InvoiceCell.taskDateFormat)").font(.caption2).fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: false)
+
             }
             VStack(alignment: .leading) {
                 Text(invoice.client.name.capitalized)
@@ -22,6 +23,7 @@ struct InvoiceContent: View {
                 Text(String(invoice.amount))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                Text(invoice.status.rawValue.capitalized).foregroundColor(invoice.status.color)
             }
         }
     }
@@ -32,7 +34,7 @@ struct InvoiceContent_Previews: PreviewProvider {
 
     static var previews: some View {
         let invoice = Invoice(client: Client(name: "uber",imageName: "car"),
-                              amount: "$144400.23",
+                              amount: "$14400.23",
                               status: .paid)
         return InvoiceContent(invoice: invoice)
     }

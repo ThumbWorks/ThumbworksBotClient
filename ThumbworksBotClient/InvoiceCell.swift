@@ -17,19 +17,19 @@ struct InvoiceCell: View {
     @State var invoice: Invoice
     var body: some View {
         HStack() {
-            HStack {
-                InvoiceContent(invoice: invoice)
-            }
-
-            Spacer()
-            Text(invoice.status.rawValue.capitalized).foregroundColor(invoice.status.color)
+            InvoiceContent(invoice: invoice)
         }.padding()
     }
 }
 
 struct InvoiceCell_Previews: PreviewProvider {
     static var previews: some View {
+        
         let invoice = Invoice(client: Client(name: "uber", imageName: "car"), amount: "$144400.23", status: .paid)
-        return InvoiceCell(invoice: invoice)
+        return Group {
+            InvoiceCell(invoice: invoice)
+            InvoiceCell(invoice: invoice)
+            InvoiceCell(invoice: invoice).previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+        }
     }
 }

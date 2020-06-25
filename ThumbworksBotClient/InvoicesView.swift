@@ -26,22 +26,22 @@ struct InvoiceView_Previews: PreviewProvider {
         let vungle = Client(name: "Vungle", imageName: "dollarsign.circle")
         let invoices = [
             Invoice(client: uber,
-                    amount: "$144400.23",
+                    amount: "$14400.23",
                     status: .paid),
             Invoice(client: apple,
-                    amount: "$144400.23",
+                    amount: "$14400.23",
                     status: .late),
             Invoice(client: lohi,
-                    amount: "$144400.23",
+                    amount: "$14400.23",
                     status: .unpaid),
             Invoice(client: diva,
-                    amount: "$144400.23",
+                    amount: "$14400.23",
                     status: .paid),
             Invoice(client: vungle,
-                    amount: "$144400.23",
+                    amount: "$14400.23",
                     status: .paid),
             Invoice(client: powerPro,
-                    amount: "$144400.23",
+                    amount: "$14400.23",
                     status: .paid),
 
         ]

@@ -31,6 +31,22 @@
 		5F41A90924A46D9400955CD8 /* InvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90724A46D4600955CD8 /* InvoiceModel.swift */; };
 		5F41A90A24A46E0600955CD8 /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E224A44FFA00955CD8 /* InvoiceCell.swift */; };
 		5F41A90D24A47D2500955CD8 /* LoadInvoicesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90B24A47A7C00955CD8 /* LoadInvoicesData.swift */; };
+		5FBFBF3924A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5FBFBF3824A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5FBFBF3E24A5063C00AADB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBFBF3D24A5063C00AADB18 /* Assets.xcassets */; };
+		5FBFBF4524A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5FBFBF4424A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5FBFBF4A24A5063C00AADB18 /* ThumbworksBotClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBFBF4924A5063C00AADB18 /* ThumbworksBotClientApp.swift */; };
+		5FBFBF4C24A5063C00AADB18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBFBF4B24A5063C00AADB18 /* ContentView.swift */; };
+		5FBFBF4E24A5063C00AADB18 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBFBF4D24A5063C00AADB18 /* NotificationController.swift */; };
+		5FBFBF5024A5063C00AADB18 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBFBF4F24A5063C00AADB18 /* NotificationView.swift */; };
+		5FBFBF5224A5063D00AADB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBFBF5124A5063D00AADB18 /* Assets.xcassets */; };
+		5FBFBF5524A5063D00AADB18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FBFBF5424A5063D00AADB18 /* Preview Assets.xcassets */; };
+		5FBFBF6324A5068700AADB18 /* InvoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E024A44FCD00955CD8 /* InvoicesView.swift */; };
+		5FBFBF6424A5068B00AADB18 /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E224A44FFA00955CD8 /* InvoiceCell.swift */; };
+		5FBFBF6524A5069000AADB18 /* InvoiceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90424A46BF000955CD8 /* InvoiceContent.swift */; };
+		5FBFBF6624A5069600AADB18 /* InvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A90724A46D4600955CD8 /* InvoiceModel.swift */; };
+		5FBFBF6724A5069C00AADB18 /* InvoicesViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E824A45E0200955CD8 /* InvoicesViewmodel.swift */; };
+		5FBFBF6824A506A100AADB18 /* InvoiceAPIDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E624A45BAB00955CD8 /* InvoiceAPIDB.swift */; };
+		5FBFBF6924A506A800AADB18 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41A8E424A45B8500955CD8 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +71,20 @@
 			remoteGlobalIDString = 5F41A8ED24A46B5F00955CD8;
 			remoteInfo = OutstandingBalanceWidgetExtension;
 		};
+		5FBFBF3A24A5063B00AADB18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F41A8AA24A44D7C00955CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FBFBF3724A5063B00AADB18;
+			remoteInfo = "ThumbworksBotClientWatchApp WatchKit App";
+		};
+		5FBFBF4624A5063C00AADB18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F41A8AA24A44D7C00955CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FBFBF4324A5063C00AADB18;
+			remoteInfo = "ThumbworksBotClientWatchApp WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +95,28 @@
 			dstSubfolderSpec = 13;
 			files = (
 				5F41A8FF24A46B6500955CD8 /* OutstandingBalanceWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBFBF5A24A5063D00AADB18 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5FBFBF3924A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBFBF5D24A5063D00AADB18 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5FBFBF4524A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +151,19 @@
 		5F41A90424A46BF000955CD8 /* InvoiceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceContent.swift; sourceTree = "<group>"; };
 		5F41A90724A46D4600955CD8 /* InvoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceModel.swift; sourceTree = "<group>"; };
 		5F41A90B24A47A7C00955CD8 /* LoadInvoicesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInvoicesData.swift; sourceTree = "<group>"; };
+		5FBFBF3524A5063B00AADB18 /* ThumbworksBotClientWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThumbworksBotClientWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBFBF3824A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThumbworksBotClientWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBFBF3D24A5063C00AADB18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FBFBF3F24A5063C00AADB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBFBF4424A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ThumbworksBotClientWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBFBF4924A5063C00AADB18 /* ThumbworksBotClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbworksBotClientApp.swift; sourceTree = "<group>"; };
+		5FBFBF4B24A5063C00AADB18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5FBFBF4D24A5063C00AADB18 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5FBFBF4F24A5063C00AADB18 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		5FBFBF5124A5063D00AADB18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FBFBF5424A5063D00AADB18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FBFBF5624A5063D00AADB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBFBF5724A5063D00AADB18 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +197,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FBFBF4124A5063C00AADB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -142,6 +214,8 @@
 				5F41A8C624A44D7E00955CD8 /* ThumbworksBotClientTests */,
 				5F41A8D124A44D7E00955CD8 /* ThumbworksBotClientUITests */,
 				5F41A8F424A46B5F00955CD8 /* OutstandingBalanceWidget */,
+				5FBFBF3C24A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App */,
+				5FBFBF4824A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension */,
 				5F41A8EF24A46B5F00955CD8 /* Frameworks */,
 				5F41A8B324A44D7C00955CD8 /* Products */,
 			);
@@ -154,6 +228,9 @@
 				5F41A8C324A44D7E00955CD8 /* ThumbworksBotClientTests.xctest */,
 				5F41A8CE24A44D7E00955CD8 /* ThumbworksBotClientUITests.xctest */,
 				5F41A8EE24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension.appex */,
+				5FBFBF3524A5063B00AADB18 /* ThumbworksBotClientWatchApp.app */,
+				5FBFBF3824A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App.app */,
+				5FBFBF4424A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +299,38 @@
 				5F41A8FA24A46B6500955CD8 /* Info.plist */,
 			);
 			path = OutstandingBalanceWidget;
+			sourceTree = "<group>";
+		};
+		5FBFBF3C24A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5FBFBF3D24A5063C00AADB18 /* Assets.xcassets */,
+				5FBFBF3F24A5063C00AADB18 /* Info.plist */,
+			);
+			path = "ThumbworksBotClientWatchApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		5FBFBF4824A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5FBFBF4924A5063C00AADB18 /* ThumbworksBotClientApp.swift */,
+				5FBFBF4B24A5063C00AADB18 /* ContentView.swift */,
+				5FBFBF4D24A5063C00AADB18 /* NotificationController.swift */,
+				5FBFBF4F24A5063C00AADB18 /* NotificationView.swift */,
+				5FBFBF5124A5063D00AADB18 /* Assets.xcassets */,
+				5FBFBF5624A5063D00AADB18 /* Info.plist */,
+				5FBFBF5724A5063D00AADB18 /* PushNotificationPayload.apns */,
+				5FBFBF5324A5063D00AADB18 /* Preview Content */,
+			);
+			path = "ThumbworksBotClientWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5FBFBF5324A5063D00AADB18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5FBFBF5424A5063D00AADB18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +408,57 @@
 			productReference = 5F41A8EE24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		5FBFBF3424A5063B00AADB18 /* ThumbworksBotClientWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FBFBF6224A5063D00AADB18 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientWatchApp" */;
+			buildPhases = (
+				5FBFBF3324A5063B00AADB18 /* Resources */,
+				5FBFBF5A24A5063D00AADB18 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FBFBF3B24A5063B00AADB18 /* PBXTargetDependency */,
+			);
+			name = ThumbworksBotClientWatchApp;
+			productName = ThumbworksBotClientWatchApp;
+			productReference = 5FBFBF3524A5063B00AADB18 /* ThumbworksBotClientWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		5FBFBF3724A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FBFBF6124A5063D00AADB18 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientWatchApp WatchKit App" */;
+			buildPhases = (
+				5FBFBF3624A5063B00AADB18 /* Resources */,
+				5FBFBF5D24A5063D00AADB18 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FBFBF4724A5063C00AADB18 /* PBXTargetDependency */,
+			);
+			name = "ThumbworksBotClientWatchApp WatchKit App";
+			productName = "ThumbworksBotClientWatchApp WatchKit App";
+			productReference = 5FBFBF3824A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5FBFBF4324A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FBFBF6024A5063D00AADB18 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientWatchApp WatchKit Extension" */;
+			buildPhases = (
+				5FBFBF4024A5063C00AADB18 /* Sources */,
+				5FBFBF4124A5063C00AADB18 /* Frameworks */,
+				5FBFBF4224A5063C00AADB18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ThumbworksBotClientWatchApp WatchKit Extension";
+			productName = "ThumbworksBotClientWatchApp WatchKit Extension";
+			productReference = 5FBFBF4424A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -322,6 +482,15 @@
 					5F41A8ED24A46B5F00955CD8 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					5FBFBF3424A5063B00AADB18 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5FBFBF3724A5063B00AADB18 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5FBFBF4324A5063C00AADB18 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 5F41A8AD24A44D7C00955CD8 /* Build configuration list for PBXProject "ThumbworksBotClient" */;
@@ -341,6 +510,9 @@
 				5F41A8C224A44D7E00955CD8 /* ThumbworksBotClientTests */,
 				5F41A8CD24A44D7E00955CD8 /* ThumbworksBotClientUITests */,
 				5F41A8ED24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension */,
+				5FBFBF3424A5063B00AADB18 /* ThumbworksBotClientWatchApp */,
+				5FBFBF3724A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App */,
+				5FBFBF4324A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -374,6 +546,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F41A8F924A46B6500955CD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBFBF3324A5063B00AADB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBFBF3624A5063B00AADB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBFBF3E24A5063C00AADB18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FBFBF4224A5063C00AADB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBFBF5524A5063D00AADB18 /* Preview Assets.xcassets in Resources */,
+				5FBFBF5224A5063D00AADB18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +622,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FBFBF4024A5063C00AADB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBFBF4E24A5063C00AADB18 /* NotificationController.swift in Sources */,
+				5FBFBF6424A5068B00AADB18 /* InvoiceCell.swift in Sources */,
+				5FBFBF6524A5069000AADB18 /* InvoiceContent.swift in Sources */,
+				5FBFBF6724A5069C00AADB18 /* InvoicesViewmodel.swift in Sources */,
+				5FBFBF6624A5069600AADB18 /* InvoiceModel.swift in Sources */,
+				5FBFBF6924A506A800AADB18 /* APIClient.swift in Sources */,
+				5FBFBF6324A5068700AADB18 /* InvoicesView.swift in Sources */,
+				5FBFBF4C24A5063C00AADB18 /* ContentView.swift in Sources */,
+				5FBFBF4A24A5063C00AADB18 /* ThumbworksBotClientApp.swift in Sources */,
+				5FBFBF6824A506A100AADB18 /* InvoiceAPIDB.swift in Sources */,
+				5FBFBF5024A5063C00AADB18 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -443,6 +657,16 @@
 			isa = PBXTargetDependency;
 			target = 5F41A8ED24A46B5F00955CD8 /* OutstandingBalanceWidgetExtension */;
 			targetProxy = 5F41A8FD24A46B6500955CD8 /* PBXContainerItemProxy */;
+		};
+		5FBFBF3B24A5063B00AADB18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FBFBF3724A5063B00AADB18 /* ThumbworksBotClientWatchApp WatchKit App */;
+			targetProxy = 5FBFBF3A24A5063B00AADB18 /* PBXContainerItemProxy */;
+		};
+		5FBFBF4724A5063C00AADB18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FBFBF4324A5063C00AADB18 /* ThumbworksBotClientWatchApp WatchKit Extension */;
+			targetProxy = 5FBFBF4624A5063C00AADB18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -735,6 +959,122 @@
 			};
 			name = Release;
 		};
+		5FBFBF5824A5063D00AADB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5FBFBF5924A5063D00AADB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5FBFBF5B24A5063D00AADB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				IBSC_MODULE = ThumbworksBotClientWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "ThumbworksBotClientWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		5FBFBF5C24A5063D00AADB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				IBSC_MODULE = ThumbworksBotClientWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "ThumbworksBotClientWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		5FBFBF5E24A5063D00AADB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ThumbworksBotClientWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ThumbworksBotClientWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		5FBFBF5F24A5063D00AADB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ThumbworksBotClientWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = F4WTN36U2F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ThumbworksBotClientWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.ThumbworksBotClientWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -779,6 +1119,33 @@
 			buildConfigurations = (
 				5F41A90124A46B6500955CD8 /* Debug */,
 				5F41A90224A46B6500955CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FBFBF6024A5063D00AADB18 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FBFBF5E24A5063D00AADB18 /* Debug */,
+				5FBFBF5F24A5063D00AADB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FBFBF6124A5063D00AADB18 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FBFBF5B24A5063D00AADB18 /* Debug */,
+				5FBFBF5C24A5063D00AADB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FBFBF6224A5063D00AADB18 /* Build configuration list for PBXNativeTarget "ThumbworksBotClientWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FBFBF5824A5063D00AADB18 /* Debug */,
+				5FBFBF5924A5063D00AADB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
